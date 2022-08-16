@@ -1,4 +1,4 @@
-# FIRST OF ALL THIS NEOVIM IS FROM <a href="https://www.youtube.com/c/devaslife">devaslife</a>
+# FIRST OF ALL THIS NEOVIM CONFIG IS FROM <a href="https://www.youtube.com/c/devaslife">devaslife</a>.
 
 # Mappings
 ### Numbers

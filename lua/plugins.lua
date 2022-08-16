@@ -50,4 +50,11 @@ packer.startup(function(use)
     -- Other LSP
     use 'williamboman/mason.nvim'
     use 'williamboman/mason-lspconfig.nvim'
+
+    -- MARKDOWN
+    use {
+        "iamcco/markdown-preview.nvim",
+        run = function() vim.fn["mkdp#util#install"]() end
+    }
+
 end)
