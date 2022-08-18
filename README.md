@@ -52,5 +52,8 @@
 - Use Enter to confirm a completion.
 
 ### GIT
-- Use "\gb" in normal mode tu use git blame.
+- Use "\gb" in normal mode to use git blame.
 - Use "\go" in normal mode to browse the file in default browser.
+
+## MARKDOWN
+- Use "<space>mt" in normal mode to toggle between on and off the markdown previewer.
