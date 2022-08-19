@@ -37,7 +37,7 @@ packer.startup(function(use)
     use 'nvim-telescope/telescope.nvim' -- Fuzy Finder
     use 'nvim-telescope/telescope-file-browser.nvim' -- File browser
 
-    -- BUFFER - TAB
+    -- BUFFER TAB
     use 'akinsho/bufferline.nvim'
 
     -- COLORIZE
@@ -56,8 +56,8 @@ packer.startup(function(use)
         "iamcco/markdown-preview.nvim",
         run = function() vim.fn["mkdp#util#install"]() end
     }
-    
-    -- IDENT
+
+    -- INDENT
     use "lukas-reineke/indent-blankline.nvim"
 
 end)
