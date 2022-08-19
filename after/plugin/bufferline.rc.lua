@@ -4,7 +4,7 @@ if (not status) then return end
 bufferline.setup {
     options = {
         mode = 'tabs',
-        separator_style = 'slant',
+        separator_style = { "|", "|" },
         always_show_bufferline = false,
         show_buffer_close_icons = false,
         show_close_icon = false,
@@ -24,7 +24,7 @@ bufferline.setup {
         },
         buffer_selected = {
             guifg = '#282828',
-            gui = 'italic'
+            gui = 'bold'
         },
         fill = {
             guibg = '#fbf1c7'
