@@ -4,7 +4,6 @@ if (not status) then return end
 bufferline.setup {
     options = {
         mode = 'tabs',
-        separator_style = { "|", "|" },
         always_show_bufferline = false,
         show_buffer_close_icons = false,
         show_close_icon = false,
@@ -12,22 +11,24 @@ bufferline.setup {
     },
     highlights = {
         separator = {
-            guifg = '#3c3836',
-            guibg = '#fbf1c7'
+            fg = '#3c3836',
+            bg = '#d5c4a1'
         },
         separator_selected = {
-            guifg = '#3c3836'
+            fg = '#3c3836',
+            bg = '#d5c4a1'
         },
         background = {
-            guifg = '#7c6f64',
-            guibg = '#fbf1c7'
+            fg = '#7c6f64',
+            bg = '#d5c4a1'
         },
         buffer_selected = {
-            guifg = '#282828',
-            gui = 'bold'
+            fg = '#282828',
+            bg = '#fbf1c7',
+            bold = true
         },
         fill = {
-            guibg = '#fbf1c7'
+            bg = '#ebdbb2'
         }
     }
 }
