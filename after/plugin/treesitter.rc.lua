@@ -16,6 +16,8 @@ ts.setup {
         'lua',
         'json',
         'css',
+        'fish',
+        'html'
     },
     autotag = {
         enable = true,
