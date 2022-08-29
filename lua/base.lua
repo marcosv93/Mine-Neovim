@@ -9,6 +9,8 @@ option.fileencoding = 'utf-8'
 vim.wo.number = true
 vim.wo.relativenumber = true
 
+vim.cmd [[set mouse=a]] -- Enable mouse.
+
 option.title = true
 option.autoindent = true
 option.hlsearch = true
@@ -18,7 +20,7 @@ option.cmdheight = 1
 option.laststatus = 2
 option.expandtab = true
 option.scrolloff = 10
-option.shell = 'fish'
+option.shell = 'zsh'
 option.inccommand = 'split'
 option.ignorecase = true
 option.smarttab = true
@@ -31,7 +33,7 @@ option.wrap = false -- No wrap lines
 option.backspace = 'start,eol,indent'
 option.path:append { '**' } -- Finding files - search down into subfolders
 option.wildignore:append { '*/node_modules/*' }
-
+vim.o.clipboard = "unnamedplus" -- Share clipboard between PC and NeoVim.
 
 vim.cmd([[let &t_Cs = "\e[4:3m"]])
 vim.cmd([[let &t_Ce = "\e[4:0m"]])
