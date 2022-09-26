@@ -51,12 +51,6 @@ packer.startup(function(use)
     use 'williamboman/mason.nvim'
     use 'williamboman/mason-lspconfig.nvim'
 
-    -- MARKDOWN
-    use {
-        "iamcco/markdown-preview.nvim",
-        run = function() vim.fn["mkdp#util#install"]() end
-    }
-
     -- INDENT
     use "lukas-reineke/indent-blankline.nvim"
 end)
