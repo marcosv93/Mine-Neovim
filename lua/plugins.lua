@@ -53,4 +53,10 @@ packer.startup(function(use)
 
     -- INDENT
     use "lukas-reineke/indent-blankline.nvim"
+
+    -- MARKDOWN
+    use({
+        "iamcco/markdown-preview.nvim",
+        run = function() vim.fn["mkdp#util#install"]() end,
+    })
 end)

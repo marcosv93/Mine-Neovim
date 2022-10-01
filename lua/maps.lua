@@ -1,4 +1,8 @@
 local keymap = vim.keymap
+local options = {
+    silent = true
+}
+
 
 -- Do not yank with "x".
 keymap.set('n', 'x', '"_x')
@@ -14,11 +18,11 @@ keymap.set('n', 'dw', 'vb"_d')
 keymap.set('n', '<C-a>', 'gg<S-v>G')
 
 -- New tab
-keymap.set('n', 'te', ':tabedit<Return>', { silent = true })
+keymap.set('n', 'te', ':tabedit<Return>', options)
 
 -- New window
-keymap.set('n', 'ss', ':split<Return><C-w>w', { silent = true })
-keymap.set('n', 'sv', ':vsplit<Return><C-w>w', { silent = true })
+keymap.set('n', 'ss', ':split<Return><C-w>w', options)
+keymap.set('n', 'sv', ':vsplit<Return><C-w>w', options)
 
 -- Move window
 keymap.set('n', '<Space>', '<C-w>w')
@@ -33,3 +37,9 @@ keymap.set('n', '<C-w><left>', '<C-w><')
 keymap.set('n', '<C-w><right>', '<C-w>>')
 keymap.set('n', '<C-w><up>', '<C-w>+')
 keymap.set('n', '<C-w><down>', '<C-w>-')
+
+-- Enable no highlight search
+keymap.set('n', '<Space>n', ':nohlsearch<Return>', options)
+
+-- Markdown previewer
+keymap.set('n', '<Space>mt', ':MarkdownPreviewToggle<Return>', options)

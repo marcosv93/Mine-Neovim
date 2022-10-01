@@ -11,16 +11,19 @@ vim.wo.relativenumber = true
 
 vim.cmd [[set mouse=a]] -- Enable mouse.
 
+vim.cmd([[ set signcolumn=yes ]])
+vim.cmd([[ set colorcolumn=100 ]])
+
 option.title = true
 option.autoindent = true
-option.hlsearch = true
 option.backup = false
+option.swapfile = false
 option.showcmd = true
 option.cmdheight = 1
 option.laststatus = 2
 option.expandtab = true
 option.scrolloff = 10
-option.shell = 'zsh'
+option.shell = 'fish'
 option.inccommand = 'split'
 option.ignorecase = true
 option.smarttab = true
@@ -37,7 +40,6 @@ vim.o.clipboard = "unnamedplus" -- Share clipboard between PC and NeoVim.
 
 vim.cmd([[let &t_Cs = "\e[4:3m"]])
 vim.cmd([[let &t_Ce = "\e[4:0m"]])
-
 
 vim.api.nvim_create_autocmd("InsertLeave", {
     pattern = '*',
